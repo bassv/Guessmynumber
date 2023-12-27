@@ -20,7 +20,7 @@ function again() {
 function check() {
   if (flag == 0) {
     let guess = Number(document.querySelector('.guess').value);
-    document.querySelector('.number').textContent = number;
+    
     if (guess <= 0 || guess > 20) {
       document.querySelector('.message').textContent = 'Enter a valid number';
     } else if (guess > number) {
